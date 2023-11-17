@@ -2,26 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "JoystixMono";
+  src: url("../../public/fonts/joystixmonospace.otf") format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "JoystixMono", monospace !important;
+}
+
+.shadow {
+  box-shadow: -1px -1px 52px -23px rgba(255,255,255,0.68);
+  -webkit-box-shadow: -1px -1px 52px -23px rgba(255,255,255,0.68);
+  -moz-box-shadow: -1px -1px 52px -23px rgba(255,255,255,0.68);
+}
+
+.welcome {
+  background: -webkit-linear-gradient(#fff, #790147);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* ou qualquer valor desejado */
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.arrow-animation {
+  animation: moveArrow 2s infinite; /* Ajuste a duração e outras propriedades conforme necessário */
+}
+
+.modal {
+  animation: slide-up 0.5s ease-in-out;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: none;
+}
+
+.modal2{
+  animation: slide-up 0.5s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 11;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
