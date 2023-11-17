@@ -155,7 +155,7 @@ export default function Skills() {
                       </section>
                       <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Highly necessary skills for advancing in one's career.
+                          Highly necessary skills for advancing in one&aposs career.
                         </h1>
                         <h1 className="text-purple-600">
                           TIP: Always be humble and sociable.

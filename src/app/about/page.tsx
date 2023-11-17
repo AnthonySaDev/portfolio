@@ -42,7 +42,7 @@ export default function About() {
               </button>
               <section className="">
                 <h1 className="welcome brightness-150 lg:text-[3rem] text-[1.5rem]">
-                  I'm Anthony Sá
+                  I&aposm Anthony Sá
                 </h1>
               </section>
               <section className="flex items-center justify-center lg:flex-row flex-col gap-10 lg:px-20 px-10">
