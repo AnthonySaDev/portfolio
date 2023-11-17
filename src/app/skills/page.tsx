@@ -59,7 +59,7 @@ export default function Skills() {
         <div className="bg-gradient-to-t from-pink-400 to-[#9439b5] fixed inset-0 z-20 flex items-center justify-around modal">
           <button
             onClick={() => setShowModal(false)}
-            className="fixed top-0 right-2 text-red-500"
+            className="fixed top-0 right-2 text-red-500 z-50"
           >
             X
           </button>
@@ -155,7 +155,7 @@ export default function Skills() {
                       </section>
                       <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Highly necessary skills for advancing in one&aposs career.
+                          Highly necessary skills for advancing in one{'\''}s career.
                         </h1>
                         <h1 className="text-purple-600">
                           TIP: Always be humble and sociable.

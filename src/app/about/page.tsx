@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <main className=" relative text-center bg-black w-full h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
-      <ParticlesComponent/>
+      <ParticlesComponent />
       <Link href="/" className="w-9/12 fixed left-4 top-10 text-left">
         <h1 className="text-white text-[1.3rem]">HOME</h1>
       </Link>
@@ -42,7 +42,7 @@ export default function About() {
               </button>
               <section className="">
                 <h1 className="welcome brightness-150 lg:text-[3rem] text-[1.5rem]">
-                  I&aposm Anthony Sá
+                  I{"'"}m Anthony Sá{" "}
                 </h1>
               </section>
               <section className="flex items-center justify-center lg:flex-row flex-col gap-10 lg:px-20 px-10">
