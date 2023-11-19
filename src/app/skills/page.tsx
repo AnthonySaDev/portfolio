@@ -19,20 +19,21 @@ import {
   TbBrandCSharp,
 } from "react-icons/tb";
 import { DiDotnet } from "react-icons/di";
-import { TbBrandDingtalk, TbBrandMongodb } from "react-icons/tb";
+import { TbBrandDingtalk } from "react-icons/tb";
 import { FcWorkflow } from "react-icons/fc";
-import { PiLampFill, PiBooksFill, PiMaskHappyLight } from "react-icons/pi";
+import { PiLampFill } from "react-icons/pi";
 import { ParticlesComponent } from "@/Particles/particles";
-
 export default function Skills() {
   const [showModal, setShowModal] = useState(false);
-
+  const [disabledPrev, setDisabledPrev] = useState(true);
+  const [disabledNext, setDisabledNext] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [_, setInit] = useState(false);
 
+
   return (
-    <main className=" relative text-center bg-black w-full h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
+    <main className="relative text-center bg-black w-full h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
       <ParticlesComponent />
 
       <Link href="/about" className="w-9/12 fixed left-0 top-10">
@@ -75,9 +76,15 @@ export default function Skills() {
                     nextEl: nextRef.current,
                   }}
                   slidesPerView={1}
-                  onInit={() => setInit(true)}
+                  onInit={() => 
+                    {setInit(true) 
+                  }}
                   modules={[Navigation]}
                   className=" h-fit sm:h-[500px] lg:w-5/12 w-9/12 flex itens-center justify-center "
+                  onSlideChange={(swiper) => {
+                    setDisabledPrev(swiper.activeIndex === 0);
+                    setDisabledNext(swiper.activeIndex === 3);
+                  }}
                 >
                   <SwiperSlide className="flex itens-center justify-center">
                     <Image
@@ -85,20 +92,41 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.2rem] text-[.5rem] sm:leading-10">
-                      <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
-                        <div className="flex items-center gap-4">
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
+                      <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-8">
+                        <div
+                          className="flex items-center gap-4"
+                        >
                           <FaReact color="blue" />
                           <h1>ReactJS</h1>
                         </div>
+
                         <div className="flex items-center gap-4 pr-2">
                           <TbBrandReactNative color="blue" />
                           <h1>React Native</h1>
                         </div>
+
                         <div className="flex items-center gap-4">
                           <TbBrandNextjs />
                           <h1>NextJs</h1>
                         </div>
+                      </section>
+                      <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
+                        <h1>theses skills are constantly being upgraded</h1>
+                        <h1 className="text-purple-600">
+                          TIP: INCREASE SKILLS WITH CONSTANT LEARNING
+                        </h1>
+                      </section>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="flex itens-center justify-center">
+                    <Image
+                      src={bordaSkills}
+                      alt="bordaSkills"
+                      className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    />
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
+                      <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
                           <TbBrandCSharp color="blue" />
                           <h1>CSHARP</h1>
@@ -112,21 +140,25 @@ export default function Skills() {
                           <h1>DATABASE</h1>
                         </div>
                       </section>
-                      <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
-                        <h1>theses skills are constantly being upgraded</h1>
-                        <h1 className="text-purple-600">
-                          TIP: INCREASE SKILLS WITH CONSTANT LEARNING
+                      <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
+                        <h1>
+                          Adapting and refining these skills is an ongoing
+                          journey
+                        </h1>
+                        <h1 className="text-blue-500">
+                          TIP: ADVANCE YOUR SKILLS THROUGH CONSISTENT LEARNING
                         </h1>
                       </section>
                     </div>
                   </SwiperSlide>
+
                   <SwiperSlide className="flex itens-center justify-center">
                     <Image
                       src={bordaSkills}
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black sm:text-[1.1rem] text-[.5rem] sm:leading-10">
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black sm:text-[1.1rem] text-[.55rem] sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4  lg:pl-10">
                         <div className="flex items-center gap-1">
                           <FcWorkflow />
@@ -140,22 +172,11 @@ export default function Skills() {
                           <PiLampFill color="yellow" />
                           <h1>Proactivity</h1>
                         </div>
-                        <div className="flex items-center gap-1">
-                          <PiBooksFill color="brown" />
-                          <h1>Commitment</h1>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <PiMaskHappyLight color="red" />
-                          <h1>Enthusiasm</h1>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <TbBrandMongodb color="green" />
-                          <h1>Adaptability</h1>
-                        </div>
                       </section>
                       <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Highly necessary skills for advancing in one{'\''}s career.
+                          Highly necessary skills for advancing in one{"'"}s
+                          career.
                         </h1>
                         <h1 className="text-purple-600">
                           TIP: Always be humble and sociable.
@@ -190,7 +211,7 @@ export default function Skills() {
               <div></div>
               <button
                 ref={prevRef}
-                className="cursor-pointer absolute top-1/2  sm:left-10 left-0 z-10"
+                className={`cursor-pointer absolute top-1/2 sm:left-10 left-0 z-10 ${disabledPrev ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 <Image
                   src={back}
@@ -200,8 +221,8 @@ export default function Skills() {
               </button>
               <button
                 ref={nextRef}
-                className="cursor-pointer absolute top-1/2  sm:right-10 right-0 z-10"
-              >
+                className={`cursor-pointer absolute top-1/2 sm:right-10 right-0 z-10 ${disabledNext ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
                 <Image
                   src={next}
                   alt="next"

@@ -35,14 +35,26 @@ export default function Projects() {
       </div>
 
       {showModal && (
-        <div className="bg-gradient-to-t from-pink-400 to-[#9439b5] fixed inset-0 z-20 flex items-center justify-around modal text-white">
-        <button
+        <div className="bg-gradient-to-t from-pink-400 to-[#9439b5] fixed inset-0 z-20 flex items-center justify-center gap-5 flex-col modal text-white overflow-y-auto">
+          <button
             onClick={() => setShowModal(false)}
             className="fixed top-0 right-2 text-red-500"
           >
             X
           </button>
-          <h1 className="animate-bounce">Em construção...</h1>
+          <h1 className="sm:text-[1.9rem] text-[1rem]">
+            To explore my codes, we{"'"}ll need to make a style change. We{"'"}ll step
+            away from 8-bit for a while (but I promise it will come back, haha).
+          </h1>
+          <h1 className="sm:text-[1.9rem] text-[1rem]">
+            Are you ready?.
+          </h1>
+          <Link
+            href="/projects/future"
+            className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
+          >
+            <h1 className="welcome brightness-200 animate-pulse">LET{"'"}S GO</h1>
+          </Link>{" "}
         </div>
       )}
     </main>
