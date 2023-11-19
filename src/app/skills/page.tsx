@@ -97,18 +97,18 @@ export default function Skills() {
                         <div
                           className="flex items-center gap-4"
                         >
-                          <FaReact color="blue" />
-                          <h1>ReactJS</h1>
+                          <FaReact size={30} color="blue" />
+                          <h1>ReactJS 2+years</h1>
                         </div>
 
                         <div className="flex items-center gap-4 pr-2">
-                          <TbBrandReactNative color="blue" />
-                          <h1>React Native</h1>
+                          <TbBrandReactNative size={30} color="blue" />
+                          <h1>React Native 1+year</h1>
                         </div>
 
                         <div className="flex items-center gap-4">
-                          <TbBrandNextjs />
-                          <h1>NextJs</h1>
+                          <TbBrandNextjs size={30} />
+                          <h1>NextJs 1+year</h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
@@ -128,16 +128,16 @@ export default function Skills() {
                     <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
-                          <TbBrandCSharp color="blue" />
-                          <h1>CSHARP</h1>
+                          <TbBrandCSharp size={30} color="blue" />
+                          <h1>CSHARP 1+year</h1>
                         </div>
                         <div className="flex items-center gap-4">
-                          <DiDotnet color="purple" />
-                          <h1>.NET</h1>
+                          <DiDotnet size={30} color="purple" />
+                          <h1>.NET 1+year</h1>
                         </div>
                         <div className="flex items-center gap-4">
-                          <FaDatabase color="green" />
-                          <h1>DATABASE</h1>
+                          <FaDatabase size={30} color="green" />
+                          <h1>DATABASE 2+years</h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
