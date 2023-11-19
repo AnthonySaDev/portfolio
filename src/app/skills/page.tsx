@@ -98,17 +98,17 @@ export default function Skills() {
                           className="flex items-center gap-4"
                         >
                           <FaReact size={30} color="blue" />
-                          <h1>ReactJS 2+years</h1>
+                          <h1>ReactJS<br></br> 2+years</h1>
                         </div>
 
                         <div className="flex items-center gap-4 pr-2">
                           <TbBrandReactNative size={30} color="blue" />
-                          <h1>React Native 1+year</h1>
+                          <h1>React Native<br></br> 1+year</h1>
                         </div>
 
                         <div className="flex items-center gap-4">
                           <TbBrandNextjs size={30} />
-                          <h1>NextJs 1+year</h1>
+                          <h1>NextJs<br></br> 1+year</h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
@@ -129,15 +129,15 @@ export default function Skills() {
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
                           <TbBrandCSharp size={30} color="blue" />
-                          <h1>CSHARP 1+year</h1>
+                          <h1>CSHARP<br></br> 1+year</h1>
                         </div>
                         <div className="flex items-center gap-4">
                           <DiDotnet size={30} color="purple" />
-                          <h1>.NET 1+year</h1>
+                          <h1>.NET<br></br> 1+year</h1>
                         </div>
                         <div className="flex items-center gap-4">
                           <FaDatabase size={30} color="green" />
-                          <h1>DATABASE 2+years</h1>
+                          <h1>DATABASE<br></br> 2+years</h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
