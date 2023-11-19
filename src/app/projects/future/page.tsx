@@ -78,7 +78,7 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">Anthony Sá</div>
-                  <div className="des">Discover Our State-of-the-Art Gym Facilities and Personalized Training Programs on Our Gym's Website.</div>
+                  <div className="des">Discover Our State-of-the-Art Gym Facilities and Personalized Training Programs on Our Gym{"'"}s Website.</div>
                   <Link target="_blank" href={"https://github.com/AnthonySaDev/ctcmp"}>See more</Link>
                 </div>
               </div>
