@@ -30,7 +30,7 @@ const Slider: React.FC = () => {
             <div className="item larDasVelhinhas">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá </div>
+                  <div className="name">Lar Das Velhinhas </div>
                   <div className="des">
                   Explore the website dedicated to support a ong that provides assistance for senior citizens
                   </div>
@@ -41,7 +41,7 @@ const Slider: React.FC = () => {
             <div className="item impresilk">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá </div>
+                  <div className="name">Impresilk </div>
                   <div className="des">Website showcasing products for sublimation, acrylics, and more.</div>
                   <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/impresilkLocalWeb"}>See more</Link>
                 </div>
@@ -50,7 +50,7 @@ const Slider: React.FC = () => {
             <div className="item neofamily">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá </div>
+                  <div className="name">Neofamily </div>
                   <div className="des">Attractive website for dentists, complete with an engaging blog section</div>
                   <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/repositorioneofamily"}>See more</Link>
                 </div>
@@ -59,7 +59,7 @@ const Slider: React.FC = () => {
             <div className="item dotcom">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá </div>
+                  <div className="name">Dotcom</div>
                   <div className="des">Captivating website unveiling cutting-edge plans from forward-thinking company.</div>
                   <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/dotcom"}>See more</Link>
                 </div>
@@ -68,7 +68,7 @@ const Slider: React.FC = () => {
             <div className="item archcad">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá </div>
+                  <div className="name">Archicad</div>
                   <div className="des">Browse Our Selection of Premier Properties on Our Real Estate Website.</div>
                   <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/archicad"}>See more</Link>
                 </div>
@@ -77,7 +77,7 @@ const Slider: React.FC = () => {
             <div className="item ctcmp">
               <div className="content">
                 <div className="contentArea">
-                  <div className="name">Anthony Sá</div>
+                  <div className="name">CTCMP</div>
                   <div className="des">Discover Our State-of-the-Art Gym Facilities and Personalized Training Programs on Our Gym{"'"}s Website.</div>
                   <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/ctcmp"}>See more</Link>
                 </div>
