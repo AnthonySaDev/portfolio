@@ -20,7 +20,7 @@ const Slider: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen flex flex-col justify-between p-4">
+    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen overflow-y-hidden flex flex-col justify-between p-4">
       <h1 className="text-center  text-xl font-serif font-bold text-white">
         My Work
       </h1>
@@ -34,7 +34,7 @@ const Slider: React.FC = () => {
                   <div className="des">
                   Explore the website dedicated to support a ong that provides assistance for senior citizens
                   </div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/lardasvelhinhas"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/lardasvelhinhas"}>See more</Link>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Anthony Sá </div>
                   <div className="des">Website showcasing products for sublimation, acrylics, and more.</div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/impresilkLocalWeb"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/impresilkLocalWeb"}>See more</Link>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Anthony Sá </div>
                   <div className="des">Attractive website for dentists, complete with an engaging blog section</div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/repositorioneofamily"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/repositorioneofamily"}>See more</Link>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Anthony Sá </div>
                   <div className="des">Captivating website unveiling cutting-edge plans from forward-thinking company.</div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/dotcom"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/dotcom"}>See more</Link>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Anthony Sá </div>
                   <div className="des">Browse Our Selection of Premier Properties on Our Real Estate Website.</div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/archicad"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/archicad"}>See more</Link>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Anthony Sá</div>
                   <div className="des">Discover Our State-of-the-Art Gym Facilities and Personalized Training Programs on Our Gym{"'"}s Website.</div>
-                  <Link target="_blank" href={"https://github.com/AnthonySaDev/ctcmp"}>See more</Link>
+                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/ctcmp"}>See more</Link>
                 </div>
               </div>
             </div>
