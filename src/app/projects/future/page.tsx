@@ -20,8 +20,8 @@ const Slider: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen flex flex-col justify-between">
-      <h1 className="text-center mt-10 text-xl font-serif font-bold text-white">
+    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen flex flex-col justify-between p-4">
+      <h1 className="text-center  text-xl font-serif font-bold text-white">
         My Work
       </h1>
       <div className="overflow-hidden">

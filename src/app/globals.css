@@ -348,7 +348,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 360px) {
   /* Estilos para dispositivos médios */
   .container {
     position: absolute;
