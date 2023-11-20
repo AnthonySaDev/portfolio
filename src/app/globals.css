@@ -377,8 +377,8 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 330px; /* Ajuste a largura conforme necessário */
-    height: 680px;
+    width: 260px; /* Ajuste a largura conforme necessário */
+    height: 540px;
     padding: 50px;
     box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden; /* Evita o scroll em X e Y */
