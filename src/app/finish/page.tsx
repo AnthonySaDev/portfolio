@@ -21,7 +21,7 @@ export default function Finish() {
         </p>
         <div className="flex items-center gap-5">
           <Link
-            href="https://wa.me/5538999337788?text=Olá,%20vim%20pelo%20site%20portfolio%%20e%20gostaria%20de%20conversar:%20"
+            href="https://wa.me/5538999337788?text=Olá,%20vim%20pelo%20site%20portfolio%20e%20gostaria%20de%20conversar:%20"
             className="bg-[#402f5c]  text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
             <h1 className="welcome brightness-200">Entrar em contato</h1>
