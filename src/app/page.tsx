@@ -8,7 +8,7 @@ import linkedin from "../../public/images/linkedin.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="h-screen w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center">
+    <div className="h-screen w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
       <Image
         src={backgroundHome}
         alt="backgroundHome"
