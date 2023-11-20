@@ -262,8 +262,8 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 200px; /* Ajuste a largura conforme necessário */
-    height: 410px;
+    width: 160px; /* Ajuste a largura conforme necessário */
+    height: 320px;
     padding: 50px;
     box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden; /* Evita o scroll em X e Y */
@@ -313,7 +313,7 @@ html {
     position: absolute;
     top: 50%;
     left: 0px;
-    width: 150px;
+    width: 125px;
     text-align: center;
     padding: 0;
     color: #eee;
@@ -352,15 +352,15 @@ html {
 
   .buttons {
     position: absolute;
-    bottom: 5px;
+    bottom: 1px;
     z-index: 22222;
     text-align: center;
-    width: 100%;
+    width: 70%;
   }
 
   .buttons button {
-    margin: 0 10px;
-    padding: 8px;
+    margin: 0 6px;
+    padding: 4px;
     background-color: #cecece;
     color: #1d1d1d;
     border-radius: 20px;

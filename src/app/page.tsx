@@ -8,13 +8,13 @@ import linkedin from "../../public/images/linkedin.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="h-screen w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
+    <div className="sm:h-screen h-[125vh] w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
       <Image
         src={backgroundHome}
         alt="backgroundHome"
         className="w-full h-full object-fill opacity-25 brightness-50"
       />
-      <section className="absolute top-7 lg:top-20 flex items-start  justify-center z-10  flex flex-col gap-10 text-white  w-full items-center h-4/5 justify-evenly">
+      <section className="absolute top-14 lg:top-20 flex items-start  justify-center z-10  flex flex-col gap-10 text-white  w-full items-center h-4/5 justify-evenly">
         <div className="lg:text-[3rem] text-[2rem] text-center">
           <h1 className="welcome brightness-150">Bem-vindo </h1>
           <h1 className="welcome brightness-150"> jogador 1</h1>
