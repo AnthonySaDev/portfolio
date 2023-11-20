@@ -66,7 +66,7 @@ export default function Skills() {
           <div className="w-full flex itens-center justify-center">
             <div className="z-30  absolute left-1/2 -translate-x-1/2 flex items-center justify-around flex-col h-full w-full  top-0">
               <h1 className="welcome brightness-150 sm:text-[3rem] text-[1.5rem]  sm:my-10">
-                CHARACTER SKILLS
+                Habilidades do personagem
               </h1>
               <>
                 <Swiper

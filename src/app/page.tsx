@@ -40,7 +40,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="lg:text-[2rem] text-[1rem] text-center">
+        <div className="lg:text-[2rem] text-[1rem] text-center flex flex-col gap-5 itens-center ">
           <h1>
             me siga <br></br> em
           </h1>
@@ -76,6 +76,7 @@ export default function Home() {
               />
             </Link>
           </div>
+          <Link className="mt-10 text-[1.2rem]" target="_blank" href={"https://docs.google.com/document/d/1H3VR3CQji52f831PasHBAlEotIkFR_lwiOTJ6VvHz9Q/edit?usp=sharing"}>Resume</Link>
         </div>
       </section>
     </div>

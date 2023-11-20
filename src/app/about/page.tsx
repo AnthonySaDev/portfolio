@@ -57,7 +57,7 @@ export default function About() {
                 />
                 {mode < 0 && (
                   <section className="flex flex-col gap-2 text-white">
-                    <h1 className="text-center">select difficulty</h1>
+                    <h1 className="text-center">Selecionar dificuldade</h1>
                     <div className="flex flex-col itens-center justify-center ">
                       <button
                         onClick={() => setMode(0)}
