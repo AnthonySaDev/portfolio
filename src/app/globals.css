@@ -229,28 +229,29 @@ html {
   animation: showcontent 2s ease-in-out 1 forwards;
 }
 
+
 .larDasVelhinhas {
-  background-image: url("../../public/images/larDasVelhinhas.png");
+  background-image: url("../../public/images/larDasVelhinhasMobile.jpg");
   background-size: cover;
 }
 .impresilk {
-  background-image: url("../../public/images/impresilk.png");
+  background-image: url("../../public/images/impresilkMobile.jpg");
   background-size: cover;
 }
 .neofamily {
-  background-image: url("../../public/images/neofamily.png");
+  background-image: url("../../public/images/neofamilyMobile.jpg");
   background-size: cover;
 }
 .dotcom {
-  background-image: url("../../public/images/dotcom.png");
+  background-image: url("../../public/images/dotcomMobile.jpg");
   background-size: cover;
 }
 .archcad {
-  background-image: url("../../public/images/archicad.png");
+  background-image: url("../../public/images/archicadMobile.jpg");
   background-size: cover;
 }
 .ctcmp {
-  background-image: url("../../public/images/ctcmp.png");
+  background-image: url("../../public/images/ctcmpMobile.jpg");
   background-size: cover;
 }
 
@@ -261,8 +262,8 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 320px; /* Ajuste a largura conforme necessário */
-    height: 250px;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 410px;
     padding: 50px;
     box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden; /* Evita o scroll em X e Y */
@@ -293,10 +294,11 @@ html {
 
   }
   .item:nth-child(3) {
-    left: 50%;
+    left: 80%;
   }
   .item:nth-child(4) {
-    left: calc(50% + 80px);
+    display: none;
+    opacity: 0;
   }
   .item:nth-child(5) {
     display: none;
@@ -375,16 +377,16 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 350px; /* Ajuste a largura conforme necessário */
-    height: 450px;
+    width: 250px; /* Ajuste a largura conforme necessário */
+    height: 580px;
     padding: 50px;
     box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden; /* Evita o scroll em X e Y */
   }
 
   .item {
-    width: 80px;
-    height: 150px;
+    width: 92px;
+    height: 220px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
@@ -407,10 +409,10 @@ html {
 
   }
   .item:nth-child(3) {
-    left: 50%;
+    left: 65%;
   }
   .item:nth-child(4) {
-    left: calc(50% + 80px);
+    left: calc(65% + 80px);
   }
   .item:nth-child(5) {
     display: none;
@@ -464,7 +466,7 @@ html {
 
   .buttons {
     position: absolute;
-    bottom: 5px;
+    bottom: 60px;
     z-index: 22222;
     text-align: center;
     width: 100%;
@@ -479,6 +481,7 @@ html {
     opacity: 0;
     animation: showcontent 2s ease-in-out 1 forwards;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -605,6 +608,31 @@ html {
     border-radius: 20px;
     opacity: 0;
     animation: showcontent 2s ease-in-out 1 forwards;
+  }
+
+  .larDasVelhinhas {
+    background-image: url("../../public/images/larDasVelhinhas.png");
+    background-size: cover;
+  }
+  .impresilk {
+    background-image: url("../../public/images/impresilk.png");
+    background-size: cover;
+  }
+  .neofamily {
+    background-image: url("../../public/images/neofamily.png");
+    background-size: cover;
+  }
+  .dotcom {
+    background-image: url("../../public/images/dotcom.png");
+    background-size: cover;
+  }
+  .archcad {
+    background-image: url("../../public/images/archicad.png");
+    background-size: cover;
+  }
+  .ctcmp {
+    background-image: url("../../public/images/ctcmp.png");
+    background-size: cover;
   }
 }
 

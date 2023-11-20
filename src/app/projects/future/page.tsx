@@ -1,9 +1,14 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import { FaChevronLeft, FaChevronRight, FaGithub } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useMediaQuery } from "react-responsive";
+import larDasVelhinhasImage from '../../../../public/images/larDasVelhinhas.png';
 
 const Slider: React.FC = () => {
+  
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   useEffect(() => {
     const nextButton = document.getElementById("next") as HTMLButtonElement;
     const prevButton = document.getElementById("prev") as HTMLButtonElement;
@@ -20,7 +25,7 @@ const Slider: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen overflow-y-hidden flex flex-col justify-between py-10">
+    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-[115vh] sm:h-screen overflow-y-hidden flex flex-col justify-between py-10">
       <h1 className="text-center  text-xl font-serif font-bold text-white">
         My Work
       </h1>
