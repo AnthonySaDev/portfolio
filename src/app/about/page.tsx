@@ -61,19 +61,19 @@ export default function About() {
                     <div className="flex flex-col itens-center justify-center ">
                       <button
                         onClick={() => setMode(0)}
-                        className="bg-[#402f5c] w-[120px] sm:w-[200px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
+                        className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
                       >
                         <h1 className="welcome brightness-200">fácil</h1>
                       </button>
                       <button
                         onClick={() => setMode(1)}
-                        className="bg-[#402f5c] w-[120px] sm:w-[200px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
+                        className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
                       >
                         <h1 className="welcome brightness-200">normal</h1>
                       </button>
                       <button
                         onClick={() => setMode(2)}
-                        className="bg-[#402f5c] w-[120px] sm:w-[200px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
+                        className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
                       >
                         <h1 className="welcome brightness-200">difícil</h1>
                       </button>

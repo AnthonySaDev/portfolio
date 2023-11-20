@@ -5,7 +5,7 @@ import { ParticlesComponent } from "@/Particles/particles";
 
 export default function Finish() {
   return (
-    <main className=" relative text-center bg-black w-full h-[120vh] sm:h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
+    <main className=" relative text-center bg-black w-full h-[110vh] sm:h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
       <ParticlesComponent />
 
       <div className="absolute z-10 flex items-center justify-center flex-col gap-5 text-[1.2rem] sm:text-[1.6rem] px-4">
