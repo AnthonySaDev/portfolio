@@ -16,13 +16,13 @@ export default function Home() {
       />
       <section className="absolute top-7 lg:top-20 flex items-start  justify-center z-10  flex flex-col gap-10 text-white  w-full items-center h-4/5 justify-evenly">
         <div className="lg:text-[3rem] text-[2rem] text-center">
-          <h1 className="welcome brightness-150">WELCOME </h1>
-          <h1 className="welcome brightness-150"> PLAYER 1</h1>
+          <h1 className="welcome brightness-150">Bem-vindo </h1>
+          <h1 className="welcome brightness-150"> jogador 1</h1>
         </div>
 
         <div className="lg:text-[2rem] text-[1rem]">
           <p>
-            PRESS PLAY TO <br></br>ENTER STORY MODE
+            Pressione jogar para <br></br>entrar no modo campanha
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Home() {
             href="/about"
             className="bg-[#402f5c] ml-24 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
-            <h1 className="welcome brightness-200">PLAY</h1>
+            <h1 className="welcome brightness-200">jogar</h1>
           </Link>
           <Image
             src={seta}
@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className="lg:text-[2rem] text-[1rem] text-center">
           <h1>
-            FOLLOW ME <br></br> AT
+            me siga <br></br> em
           </h1>
           <div className="flex items-center justify-center gap-5 mt-10">
             <Link

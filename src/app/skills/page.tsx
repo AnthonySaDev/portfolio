@@ -31,7 +31,6 @@ export default function Skills() {
   const nextRef = useRef(null);
   const [_, setInit] = useState(false);
 
-
   return (
     <main className="relative text-center bg-black w-full h-screen flex items-center justify-center flex-col gap-3 text-[2rem] px-4">
       <ParticlesComponent />
@@ -45,13 +44,13 @@ export default function Skills() {
       </Link>
       <div className="absolute z-10 flex items-center justify-center flex-col gap-5 text-[2rem] px-4">
         <h1 className="welcome brightness-150">LEVEL 2</h1>
-        <p className="text-white text-[1.5rem]">EXPLORE MY SKILLS</p>
+        <p className="text-white text-[1.5rem]">EXPLORE minhas habilidades</p>
         <div className="flex items-center gap-5">
           <button
             onClick={() => setShowModal(true)}
             className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
-            <h1 className="welcome brightness-200">START</h1>
+            <h1 className="welcome brightness-200">Começar</h1>
           </button>
         </div>
       </div>
@@ -76,8 +75,8 @@ export default function Skills() {
                     nextEl: nextRef.current,
                   }}
                   slidesPerView={1}
-                  onInit={() => 
-                    {setInit(true) 
+                  onInit={() => {
+                    setInit(true);
                   }}
                   modules={[Navigation]}
                   className=" h-fit sm:h-[500px] lg:w-5/12 w-9/12 flex itens-center justify-center "
@@ -94,27 +93,34 @@ export default function Skills() {
                     />
                     <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-8">
-                        <div
-                          className="flex items-center gap-4"
-                        >
+                        <div className="flex items-center gap-4">
                           <FaReact size={30} color="blue" />
-                          <h1>ReactJS<br></br> 2+years</h1>
+                          <h1>
+                            ReactJS<br></br> 2+anos
+                          </h1>
                         </div>
 
                         <div className="flex items-center gap-4 pr-2">
                           <TbBrandReactNative size={30} color="blue" />
-                          <h1>React Native<br></br> 1+year</h1>
+                          <h1>
+                            React Native<br></br> 1+ano
+                          </h1>
                         </div>
 
                         <div className="flex items-center gap-4">
                           <TbBrandNextjs size={30} />
-                          <h1>NextJs<br></br> 1+year</h1>
+                          <h1>
+                            NextJs<br></br> 1+ano
+                          </h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
-                        <h1>theses skills are constantly being upgraded</h1>
+                        <h1>
+                          Essas habilidades estão sendo constantemente
+                          aprimoradas
+                        </h1>
                         <h1 className="text-purple-600">
-                          TIP: INCREASE SKILLS WITH CONSTANT LEARNING
+                          DICA: AUMENTE AS HABILIDADES COM ESTUDO CONTíNUO
                         </h1>
                       </section>
                     </div>
@@ -129,24 +135,30 @@ export default function Skills() {
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
                           <TbBrandCSharp size={30} color="blue" />
-                          <h1>CSHARP<br></br> 1+year</h1>
+                          <h1>
+                            CSHARP<br></br> 1+ano
+                          </h1>
                         </div>
                         <div className="flex items-center gap-4">
                           <DiDotnet size={30} color="purple" />
-                          <h1>.NET<br></br> 1+year</h1>
+                          <h1>
+                            .NET<br></br> 1+ano
+                          </h1>
                         </div>
                         <div className="flex items-center gap-4">
                           <FaDatabase size={30} color="green" />
-                          <h1>DATABASE<br></br> 2+years</h1>
+                          <h1>
+                            DATABASE<br></br> 2+anos
+                          </h1>
                         </div>
                       </section>
                       <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
                         <h1>
-                          Adapting and refining these skills is an ongoing
-                          journey
+                          Adaptar e refinar essas habilidades é um processo
+                          contínuo da jornada
                         </h1>
                         <h1 className="text-blue-500">
-                          TIP: ADVANCE YOUR SKILLS THROUGH CONSISTENT LEARNING
+                          DICA: Melhore SUAS HABILIDADES ATRAVÉS DE DISCIPLINA
                         </h1>
                       </section>
                     </div>
@@ -175,11 +187,11 @@ export default function Skills() {
                       </section>
                       <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Highly necessary skills for advancing in one{"'"}s
-                          career.
+                          Habilidades altamente necessárias para avançar
+                          carreira.
                         </h1>
                         <h1 className="text-purple-600">
-                          TIP: Always be humble and sociable.
+                          DICA: Seja sempre humilde e sociável
                         </h1>
                       </section>
                     </div>
@@ -188,7 +200,7 @@ export default function Skills() {
                     <div className="w-full h-full absolute top-0 flex flex-col itens-center bg-[#402f5c] bg-opacity-70 shadow sm:p-8 rounded-lg justify-center sm:text-[1.9rem] text-[1.1rem]">
                       <section className="text-center flex flex-col itens-center justify-center">
                         <h1 className="welcome brightness-150">
-                          LEVEl CLEARED
+                          Nível concluído
                         </h1>
                         <div className="flex items-center gap-4 justify-center">
                           <FaStar color="yellow" />
@@ -202,7 +214,7 @@ export default function Skills() {
                         href="/projects"
                         className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
                       >
-                        <h1 className="welcome brightness-200">NEXT LEVEL</h1>
+                        <h1 className="welcome brightness-200">Próximo nível</h1>
                       </Link>
                     </div>
                   </SwiperSlide>
@@ -211,7 +223,9 @@ export default function Skills() {
               <div></div>
               <button
                 ref={prevRef}
-                className={`cursor-pointer absolute top-1/2 sm:left-10 left-0 z-10 ${disabledPrev ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`cursor-pointer absolute top-1/2 sm:left-10 left-0 z-10 ${
+                  disabledPrev ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 <Image
                   src={back}
@@ -221,8 +235,10 @@ export default function Skills() {
               </button>
               <button
                 ref={nextRef}
-                className={`cursor-pointer absolute top-1/2 sm:right-10 right-0 z-10 ${disabledNext ? 'opacity-50 cursor-not-allowed' : ''}`}
-                >
+                className={`cursor-pointer absolute top-1/2 sm:right-10 right-0 z-10 ${
+                  disabledNext ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
                 <Image
                   src={next}
                   alt="next"

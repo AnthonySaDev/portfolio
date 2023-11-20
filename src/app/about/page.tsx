@@ -19,15 +19,16 @@ export default function About() {
       </Link>
       <div className="absolute z-10 flex items-center justify-center flex-col gap-5 text-[2rem] px-4">
         <h1 className="welcome brightness-150">LEVEL 1</h1>
-        <p className="text-white text-[1.5rem]">KNOW ABOUT ME</p>
+        <p className="text-white text-[1.5rem]">Sobre mim</p>
         <div className="flex items-center gap-5">
           <button
-            onClick={() => 
-              {setShowModal(true) 
-              setMode(-1)}}
+            onClick={() => {
+              setShowModal(true);
+              setMode(-1);
+            }}
             className="bg-[#402f5c]  text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
-            <h1 className="welcome brightness-200">START</h1>
+            <h1 className="welcome brightness-200">começar</h1>
           </button>
         </div>
       </div>
@@ -45,7 +46,7 @@ export default function About() {
               </button>
               <section className="">
                 <h1 className="welcome brightness-150 lg:text-[3rem] text-[1.5rem]">
-                  I{"'"}m Anthony Sá
+                  Eu sou o Anthony Sá
                 </h1>
               </section>
               <section className="flex items-center justify-center flex-col gap-5 lg:px-20 px-10 text-left">
@@ -62,7 +63,7 @@ export default function About() {
                         onClick={() => setMode(0)}
                         className="bg-[#402f5c] w-[120px] sm:w-[200px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
                       >
-                        <h1 className="welcome brightness-200">easy</h1>
+                        <h1 className="welcome brightness-200">fácil</h1>
                       </button>
                       <button
                         onClick={() => setMode(1)}
@@ -74,7 +75,7 @@ export default function About() {
                         onClick={() => setMode(2)}
                         className="bg-[#402f5c] w-[120px] sm:w-[200px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
                       >
-                        <h1 className="welcome brightness-200">hard</h1>
+                        <h1 className="welcome brightness-200">difícil</h1>
                       </button>
                     </div>
                   </section>
@@ -82,78 +83,87 @@ export default function About() {
 
                 {mode === 0 && (
                   <>
-                        <button
-                        onClick={() => setMode(-1)}
-                        className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                        >
-                        <h1 className="welcome brightness-200">change difficulty</h1>
-                      </button>
+                    <button
+                      onClick={() => setMode(-1)}
+                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
+                    >
+                      <h1 className="welcome brightness-200">
+                        Mudar dificuldade
+                      </h1>
+                    </button>
 
                     <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      College student passionate about software development,
-                      enrolled in Computer Engineering. I am constantly seeking
-                      opportunities to learn, grow, and contribute, while
-                      applying my curiosity and passion to tackle challenges in
-                      the world of technology.
+                      Desenvolvedor Web apaixonado por desenvolvimento de
+                      software, matriculado em Engenharia da Computação. Estou
+                      constantemente buscando oportunidades de aprender, crescer
+                      e contribuir, enquanto aplicando minha curiosidade e
+                      paixão para enfrentar desafios em o mundo da tecnologia.
                     </p>
                   </>
                 )}
                 {mode === 1 && (
                   <>
-                        <button
-                        onClick={() => setMode(-1)}
-                        className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                        >
-                        <h1 className="welcome brightness-200">change difficulty</h1>
-                      </button>
-                      <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      College student passionate about software development,
-                      currently studying Computer Engineering. Eager to learn,
-                      grow, and contribute in the dynamic world of technology. I
-                      have advanced knowledge in ReactJS, a year of experience
-                      with React Native, and I{"'"}m on the path to becoming a
-                      full-stack developer with .NET, a technology I discovered
-                      and fell in love with during my college years. I{"'"}ve also
-                      gained practical experience at Nobilis Marketing, working
-                      on web development projects. Additionally, I use .NET in
-                      my academic projects, creating APIs and Windows
-                      applications. Excited to apply my skills and contribute to
-                      the field of software development
+                    <button
+                      onClick={() => setMode(-1)}
+                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
+                    >
+                      <h1 className="welcome brightness-200">
+                        mudar dificuldade
+                      </h1>
+                    </button>
+                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
+                      Desenvolvedor web apaixonado por desenvolvimento de
+                      software, atualmente cursando Engenharia da Computação.
+                      Ansioso para aprender, crescer e contribuir no mundo
+                      dinâmico da tecnologia. EU possuo conhecimento avançado em
+                      ReactJS, um ano de experiência com React Native, e estou
+                      no caminho para me tornar um desenvolvedor full-stack com
+                      .NET, uma tecnologia que descobri e me apaixonei durante
+                      meus anos de faculdade. Eu adquiri experiência prática na
+                      Nobilis Marketing, trabalhando em projetos de
+                      desenvolvimento web. Além disso, eu uso .NET em meus
+                      projetos acadêmicos, criando APIs e aplicações Windows.
+                      Estou animado para aplicar minhas habilidades e contribuir
+                      para a área de desenvolvimento de software
                     </p>
                   </>
                 )}
                 {mode === 2 && (
                   <>
-                         <button
-                        onClick={() => setMode(-1)}
-                        className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                        >
-                        <h1 className="welcome brightness-200">change difficulty</h1>
-                      </button>
+                    <button
+                      onClick={() => setMode(-1)}
+                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
+                    >
+                      <h1 className="welcome brightness-200">
+                        mudar dificuldade
+                      </h1>
+                    </button>
 
-                      <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      College student passionate about software development,
-                      currently pursuing a degree in Computer Engineering. I am
-                      dedicated to continuous learning, seeking opportunities to
-                      grow and contribute while applying my curiosity and
-                      passion to overcome challenges in the ever-evolving field
-                      of technology. In addition to my academic pursuits, I
-                      bring practical experience from my time at Nobilis
-                      Marketing, where I worked on web development projects.
-                      This hands-on experience has enhanced my skills and
-                      provided me with valuable insights into the real-world
-                      application of software development principles. My journey
-                      into development has been marked by a focus on ReactJS,
-                      with advanced proficiency, and a year of dedicated study
-                      in React Native. I am also in the process of expanding my
-                      skill set to become a full-stack developer with .NET, a
-                      technology I was introduced to during my college studies.
-                      In this academic setting, I actively use .NET to create
-                      APIs and Windows applications, further deepening my
-                      understanding and application of this powerful technology.
-                      I am excited about the prospect of combining my academic
-                      knowledge and practical experience to contribute
-                      meaningfully to the field of software development
+                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
+                      Desenvolvedor Web apaixonado por desenvolvimento de
+                      software, atualmente cursando Engenharia de Computação. Eu
+                      sou dedicado ao aprendizado contínuo, buscando
+                      oportunidades para crescer e contribuir enquanto aplico
+                      minha curiosidade e paixão por superar desafios em um
+                      campo em constante evolução de tecnologia. Além de minhas
+                      atividades acadêmicas, possuo experiência prática do meu
+                      tempo na Nobilis Marketing, onde atuei em projetos de
+                      desenvolvimento web. Esta experiência prática aprimorou
+                      minhas habilidades e me forneceu informações valiosas
+                      sobre o mundo real aplicação de princípios de
+                      desenvolvimento de software. Minha jornada em
+                      desenvolvimento foi marcado por um foco em ReactJS, com
+                      proficiência avançada e um ano de estudo dedicado em React
+                      Native. Também estou no processo de expandir meu conjunto
+                      de habilidades para se tornar um desenvolvedor full-stack
+                      com .NET, um tecnologia que conheci durante meus estudos
+                      universitários. Neste ambiente acadêmico, uso ativamente o
+                      .NET para criar APIs e aplicações Windows, aprofundando
+                      ainda mais minha compreensão e aplicação desta poderosa
+                      tecnologia. Estou animado com a perspectiva de combinar
+                      minha experiência acadêmica conhecimento e experiência
+                      prática para contribuir significativamente para o campo de
+                      desenvolvimento de software
                     </p>
                   </>
                 )}
@@ -163,7 +173,7 @@ export default function About() {
                   href="/skills"
                   className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300 my-10"
                 >
-                  <h1 className="welcome brightness-200">NEXT LEVEL</h1>
+                  <h1 className="welcome brightness-200">Proxímo nível</h1>
                 </Link>
               )}
               <Image

@@ -3,10 +3,9 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
-import larDasVelhinhasImage from '../../../../public/images/larDasVelhinhas.png';
+import larDasVelhinhasImage from "../../../../public/images/larDasVelhinhas.png";
 
 const Slider: React.FC = () => {
-  
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useEffect(() => {
@@ -25,9 +24,9 @@ const Slider: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-[115vh] sm:h-screen overflow-y-hidden flex flex-col justify-between py-10">
-      <h1 className="text-center  text-xl font-serif font-bold text-white">
-        My Work
+    <div className="flex flex-col bg-gradient-to-t from-zinc-600 to-zinc-900 h-screen overflow-y-hidden flex flex-col justify-between py-2 sm:py-10">
+      <h1 className="text-center text-2xl font-serif font-bold text-white">
+        Meus Trabalhos
       </h1>
       <div className="overflow-hidden">
         <div className="container">
@@ -37,9 +36,16 @@ const Slider: React.FC = () => {
                 <div className="contentArea">
                   <div className="name">Lar Das Velhinhas </div>
                   <div className="des">
-                  Explore the website dedicated to support a ong that provides assistance for senior citizens
+                    Explore o site dedicado a apoiar uma ONG que presta
+                    assistência a idosos.{" "}
                   </div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/lardasvelhinhas"}>See more</Link>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={"https://github.com/AnthonySaDev/lardasvelhinhas"}
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -47,8 +53,17 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">Impresilk </div>
-                  <div className="des">Website showcasing products for sublimation, acrylics, and more.</div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/impresilkLocalWeb"}>See more</Link>
+                  <div className="des">
+                    Site apresentando produtos para sublimação, acrílicos e
+                    mais.
+                  </div>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={"https://github.com/AnthonySaDev/impresilkLocalWeb"}
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -56,8 +71,19 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">Neofamily </div>
-                  <div className="des">Attractive website for dentists, complete with an engaging blog section</div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/repositorioneofamily"}>See more</Link>
+                  <div className="des">
+                    Site desenvolvido para dentistas, completo com um envolvente
+                    seção do blog
+                  </div>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={
+                      "https://github.com/AnthonySaDev/repositorioneofamily"
+                    }
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -65,8 +91,17 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">Dotcom</div>
-                  <div className="des">Captivating website unveiling cutting-edge plans from forward-thinking company.</div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/dotcom"}>See more</Link>
+                  <div className="des">
+                    Site cativante revelando planos de ponta de empresa com
+                    visão de futuro.
+                  </div>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={"https://github.com/AnthonySaDev/dotcom"}
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -74,8 +109,17 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">Archicad</div>
-                  <div className="des">Browse Our Selection of Premier Properties on Our Real Estate Website.</div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/archicad"}>See more</Link>
+                  <div className="des">
+                    Navegue pela nossa seleção de propriedades de primeira linha
+                    em nosso Real Site imobiliário.
+                  </div>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={"https://github.com/AnthonySaDev/archicad"}
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -83,8 +127,18 @@ const Slider: React.FC = () => {
               <div className="content">
                 <div className="contentArea">
                   <div className="name">CTCMP</div>
-                  <div className="des">Discover Our State-of-the-Art Gym Facilities and Personalized Training Programs on Our Gym{"'"}s Website.</div>
-                  <Link className="bg-gradient" target="_blank" href={"https://github.com/AnthonySaDev/ctcmp"}>See more</Link>
+                  <div className="des">
+                    Descubra nossas instalações fitness de última geração e
+                    Programas de treinamento personalizados no site da nossa
+                    academia.
+                  </div>
+                  <Link
+                    className="bg-gradient"
+                    target="_blank"
+                    href={"https://github.com/AnthonySaDev/ctcmp"}
+                  >
+                    Ver mais
+                  </Link>
                 </div>
               </div>
             </div>
@@ -101,7 +155,7 @@ const Slider: React.FC = () => {
       </div>
       <Link href="/finish">
         <h1 className="text-center mt-10 text-xl font-serif font-bold text-white bg-gradient w-fit p-2 mx-auto">
-          Next Level
+          Próximo Nível
         </h1>
       </Link>
     </div>

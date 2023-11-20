@@ -169,7 +169,7 @@ html {
   font-family: system-ui;
 }
 .contentArea {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.92);
   padding: 80px;
   border-radius: 20px;
   animation: showcontent 1s ease-in-out 1 forwards;
@@ -185,16 +185,16 @@ html {
   animation: showcontent 1s ease-in-out 1 forwards;
 }
 .item .des {
-  margin: 20px 0;
+  margin: 25px 0;
   opacity: 0;
   animation: showcontent 1.5s ease-in-out 1 forwards;
 }
 .item a {
-  padding: 10px 20px
-  ;
+  padding: 10px 20px;
   font-weight: bold;
   color: #000;
   border-radius: 20px;
+  margin: 10px 0;
   opacity: 0;
   animation: showcontent 2s ease-in-out 1 forwards;
 }
@@ -323,7 +323,7 @@ html {
 
   }
   .contentArea {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.92);
     padding: 10px;
     border-radius: 20px;
     animation: showcontent 1s ease-in-out 1 forwards;
@@ -373,12 +373,12 @@ html {
 @media only screen and (min-width: 360px) {
   /* Estilos para dispositivos médios */
   .container {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 250px; /* Ajuste a largura conforme necessário */
-    height: 580px;
+    height: 510px;
     padding: 50px;
     box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden; /* Evita o scroll em X e Y */
@@ -409,7 +409,7 @@ html {
 
   }
   .item:nth-child(3) {
-    left: 65%;
+    left: 70%;
   }
   .item:nth-child(4) {
     left: calc(65% + 80px);
@@ -437,26 +437,26 @@ html {
 
   }
   .contentArea {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.92);
     padding: 10px;
     border-radius: 20px;
     animation: showcontent 1s ease-in-out 1 forwards;
   }
 
   .item .name {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards;
   }
   .item .des {
-    margin: 5px 0;
+    margin: 15px 0;
     opacity: 0;
     animation: showcontent 1.5s ease-in-out 1 forwards;
   }
   .item a {
     padding: 5px 12px;
-    margin: 5px 0;
+    margin: 15px 0;
     font-weight: bold;
     color: #fff;
     border-radius: 20px;
@@ -524,10 +524,10 @@ html {
     box-shadow: none;
   }
   .item:nth-child(3) {
-    left: 65%;
+    left: 85%;
   }
   .item:nth-child(4) {
-    left: calc(65% + 220px);
+    left: calc(50% + 220px);
   }
   .item:nth-child(5) {
     left: calc(50% + 420px);
@@ -594,10 +594,12 @@ html {
 
   .buttons {
     position: absolute;
-    bottom: 30px;
+    bottom: 60px;
     z-index: 22222;
     text-align: center;
     width: 100%;
+    text-align: right;
+    padding-right: 60px;
   }
 
   .buttons button {
