@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex items-center gap-5">
           <Link
             href="/about"
-            className="bg-[#402f5c] ml-24 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
+            className="bg-[#402f5c] ml-20 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
             <h1 className="welcome brightness-200">jogar</h1>
           </Link>
