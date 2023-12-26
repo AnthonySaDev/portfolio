@@ -18,6 +18,7 @@ import larDasVelhinhas from "../../../public/images/larDasVelhinhas.png";
 import impresilk from "../../../public/images/impresilk.png";
 import pizzaria from "../../../public/images/pizzaria.png";
 import chamados from "../../../public/images/chamados.png";
+import Project from "@/components/Project";
 export default function Skills() {
   const [showModal, setShowModal] = useState(false);
   const [disabledPrev, setDisabledPrev] = useState(true);
@@ -86,35 +87,13 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
-                      <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  pl-4 pr-2 relative">
-                        <div className="flex items-center justify-center">
-                          <div className="">
-                            <Image
-                              src={larDasVelhinhas}
-                              alt="larDasVelhinhas"
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-                      </section>
-
-                      <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
-                        <h1>
-                          Explore o site dedicado a apoiar uma ONG que presta
-                          assistência a idosos.
-                        </h1>
-                        <Link
-                          href="https://lardasvelhinhas.com.br/"
-                          target="_blank"
-                          className="w-fit mx-auto"
-                        >
-                          <button className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm  shadow hover:brightness-200 duration-300">
-                            <h1 className="welcome brightness-200">Visitar</h1>
-                          </button>
-                        </Link>
-                      </section>
-                    </div>
+                    <Project
+                      title="Lar das Velhinhas"
+                      image={larDasVelhinhas}
+                      description="Explore o site dedicado a apoiar uma ONG que presta
+        assistência a idosos."
+                      link="https://lardasvelhinhas.com.br/"
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="flex itens-center justify-center">
                     <Image
@@ -122,35 +101,13 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
-                      <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  pl-4 pr-2 relative">
-                        <div className="flex items-center justify-center">
-                          <div className="">
-                            <Image
-                              src={impresilk}
-                              alt="impresilk"
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-                      </section>
-
-                      <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
-                        <h1>
-                          Site de vendas: produtos para sublimação, acrílicos e
-                          mais.
-                        </h1>
-                        <Link
-                          href="https://impresilk.com.br/"
-                          target="_blank"
-                          className="w-fit mx-auto"
-                        >
-                          <button className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm  shadow hover:brightness-200 duration-300">
-                            <h1 className="welcome brightness-200">Visitar</h1>
-                          </button>
-                        </Link>
-                      </section>
-                    </div>
+                    <Project
+                      description="Site de vendas: produtos para sublimação, acrílicos e
+                          mais."
+                      image={impresilk}
+                      link="https://impresilk.com.br"
+                      title="impresilk"
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="flex itens-center justify-center">
                     <Image
@@ -158,35 +115,13 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
-                      <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  pl-4 pr-2 relative">
-                        <div className="flex items-center justify-center">
-                          <div className="">
-                            <Image
-                              src={pizzaria}
-                              alt="pizzaria"
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-                      </section>
-
-                      <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
-                        <h1>
-                          Sistema fullStack de gerenciamento de
-                          estabelecimentos.{" "}
-                        </h1>
-                        <Link
-                          href="https://github.com/AnthonySaDev/ProjetoPizzaria"
-                          target="_blank"
-                          className="w-fit mx-auto"
-                        >
-                          <button className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm  shadow hover:brightness-200 duration-300">
-                            <h1 className="welcome brightness-200">Visitar</h1>
-                          </button>
-                        </Link>
-                      </section>
-                    </div>
+                    <Project
+                      description=" Sistema fullStack de gerenciamento de
+                          estabelecimentos."
+                      image={pizzaria}
+                      link="https://github.com/AnthonySaDev/ProjetoPizzaria"
+                      title="pizzaria"
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="flex itens-center justify-center">
                     <Image
@@ -194,35 +129,13 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
-                      <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  pl-4 pr-2 relative">
-                        <div className="flex items-center justify-center">
-                          <div className="">
-                            <Image
-                              src={chamados}
-                              alt="chamados"
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-                      </section>
-
-                      <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
-                        <h1>
-                          Sistema de gerenciamento de chamados para um
-                          escritório de contabilidade.
-                        </h1>
-                        <Link
-                          href="https://github.com/AnthonySaDev/SistemaChamados"
-                          target="_blank"
-                          className="w-fit mx-auto"
-                        >
-                          <button className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm  shadow hover:brightness-200 duration-300">
-                            <h1 className="welcome brightness-200">Visitar</h1>
-                          </button>
-                        </Link>
-                      </section>
-                    </div>
+                    <Project
+                      description=" Sistema de gerenciamento de chamados para um
+                          escritório de contabilidade."
+                      image={chamados}
+                      title="chamados"
+                      link="https://github.com/AnthonySaDev/SistemaChamados"
+                    />
                   </SwiperSlide>
 
                   <SwiperSlide className="flex itens-center justify-center">
