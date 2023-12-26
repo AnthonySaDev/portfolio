@@ -59,10 +59,10 @@ export default function Skills() {
           >
             X
           </button>
-          <div className="w-full flex itens-center justify-center">
+          <div className="w-full flex items-center justify-center ">
             <div className="z-30  absolute left-1/2 -translate-x-1/2 flex items-center justify-around flex-col h-full w-full  top-0">
               <h1 className="welcome brightness-150 sm:text-[3rem] text-[1.5rem]  sm:my-10">
-                projetos
+                projetos do personagem
               </h1>
               <>
                 <Swiper
@@ -75,17 +75,17 @@ export default function Skills() {
                     setInit(true);
                   }}
                   modules={[Navigation]}
-                  className=" h-fit sm:h-[350px] lg:w-5/12 w-9/12 flex itens-center justify-center "
+                  className=" sm:h-[400px] h-[200px] lg:w-5/12 w-9/12 flex items-center justify-center"
                   onSlideChange={(swiper) => {
                     setDisabledPrev(swiper.activeIndex === 0);
                     setDisabledNext(swiper.activeIndex === 4);
                   }}
                 >
-                  <SwiperSlide className="flex itens-center justify-center">
+                  <SwiperSlide className="flex items-center justify-center">
                     <Image
                       src={bordaSkills}
                       alt="bordaSkills"
-                      className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      className="object-fill sm:h-[400px] h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
                     <Project
                       title="Lar das Velhinhas"
@@ -95,7 +95,7 @@ export default function Skills() {
                       link="https://lardasvelhinhas.com.br/"
                     />
                   </SwiperSlide>
-                  <SwiperSlide className="flex itens-center justify-center">
+                  <SwiperSlide className="flex items-center justify-center">
                     <Image
                       src={bordaSkills}
                       alt="bordaSkills"
@@ -109,7 +109,7 @@ export default function Skills() {
                       title="impresilk"
                     />
                   </SwiperSlide>
-                  <SwiperSlide className="flex itens-center justify-center">
+                  <SwiperSlide className="flex items-center justify-center">
                     <Image
                       src={bordaSkills}
                       alt="bordaSkills"
@@ -123,7 +123,7 @@ export default function Skills() {
                       title="pizzaria"
                     />
                   </SwiperSlide>
-                  <SwiperSlide className="flex itens-center justify-center">
+                  <SwiperSlide className="flex items-center justify-center">
                     <Image
                       src={bordaSkills}
                       alt="bordaSkills"
@@ -138,9 +138,9 @@ export default function Skills() {
                     />
                   </SwiperSlide>
 
-                  <SwiperSlide className="flex itens-center justify-center">
-                    <div className="w-full h-full absolute top-0 flex flex-col itens-center bg-[#402f5c] bg-opacity-70 shadow sm:p-8 rounded-lg justify-center sm:text-[1.9rem] text-[1.1rem]">
-                      <section className="text-center flex flex-col itens-center justify-center">
+                  <SwiperSlide className="flex items-center justify-center">
+                    <div className="w-full h-full absolute top-0 flex flex-col items-center bg-[#402f5c] bg-opacity-70 shadow sm:p-8 rounded-lg justify-center sm:text-[1.9rem] text-[1.1rem]">
+                      <section className="text-center flex flex-col items-center justify-center">
                         <h1 className="welcome brightness-150">
                           Nível concluído
                         </h1>

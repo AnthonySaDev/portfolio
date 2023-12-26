@@ -12,14 +12,14 @@ interface ProjectProps {
 
 export default function Project({ title, description, image, link }: ProjectProps) {
   return (
-    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
-    <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  pl-4 pr-2 relative">
+    <div className="w-full sm:h-[400px] h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
+    <section className="flex flex-col items-center justify-center lg:gap-5 gap-3 w-1/2  relative">
       <div className="flex items-center justify-center">
-        <div className="">
+        <div className="mx-auto w-[95%] h-full">
           <Image
             src={image}
             alt={title}
-            className="w-full h-full object-cover"
+            className="mx-1 object-cover"
             priority
           />
         </div>
@@ -43,3 +43,4 @@ export default function Project({ title, description, image, link }: ProjectProp
   </div>
   )
 }
+
