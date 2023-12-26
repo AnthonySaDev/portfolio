@@ -153,7 +153,7 @@ export default function Skills() {
                         </div>
                       </section>
                       <Link
-                        href="/projects"
+                        href="/finish"
                         className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
                       >
                         <h1 className="welcome brightness-200">
