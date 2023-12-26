@@ -8,7 +8,7 @@ import linkedin from "../../public/images/linkedin.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="sm:h-screen h-[125vh] w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
+    <div className="h-screen w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
       <Image
         src={backgroundHome}
         alt="backgroundHome"
@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex items-center gap-5">
           <Link
             href="/about"
-            className="bg-[#402f5c] ml-20 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
+            className="bg-[#402f5c] ml-28 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
           >
             <h1 className="welcome brightness-200">jogar</h1>
           </Link>
@@ -44,7 +44,7 @@ export default function Home() {
           <h1>
             me siga <br></br> em
           </h1>
-          <div className="flex items-center justify-center gap-5 mt-10">
+          <div className="flex items-center justify-center gap-5 mt-2">
             <Link
               href={"https://www.facebook.com/anthonysareis"}
               target="_blank"
@@ -76,7 +76,6 @@ export default function Home() {
               />
             </Link>
           </div>
-          <Link className="mt-10 text-[1.2rem]" target="_blank" href={"https://docs.google.com/document/d/1H3VR3CQji52f831PasHBAlEotIkFR_lwiOTJ6VvHz9Q/edit?usp=sharing"}>Currículo</Link>
         </div>
       </section>
     </div>

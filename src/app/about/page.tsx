@@ -45,7 +45,7 @@ export default function About() {
                 X
               </button>
               <section className="">
-                <h1 className="welcome brightness-150 lg:text-[3rem] text-[1.5rem]">
+                <h1 className="welcome brightness-150 lg:text-[3rem] text-[1.2rem]">
                   Eu sou o Anthony Sá
                 </h1>
               </section>

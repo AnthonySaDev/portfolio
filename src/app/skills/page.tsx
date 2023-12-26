@@ -79,7 +79,7 @@ export default function Skills() {
                     setInit(true);
                   }}
                   modules={[Navigation]}
-                  className=" h-fit sm:h-[500px] lg:w-5/12 w-9/12 flex itens-center justify-center "
+                  className=" h-fit sm:h-[350px] lg:w-5/12 w-9/12 flex itens-center justify-center "
                   onSlideChange={(swiper) => {
                     setDisabledPrev(swiper.activeIndex === 0);
                     setDisabledNext(swiper.activeIndex === 3);
@@ -91,7 +91,7 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-8">
                         <div className="flex items-center gap-4">
                           <FaReact size={30} color="blue" />
@@ -114,7 +114,7 @@ export default function Skills() {
                           </h1>
                         </div>
                       </section>
-                      <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
+                      <section className="text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
                         <h1>
                           Essas habilidades estão sendo constantemente
                           aprimoradas
@@ -131,7 +131,7 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black  sm:text-[1.1rem] text-[.55rem] sm:leading-10">
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
                           <TbBrandCSharp size={30} color="blue" />
@@ -152,13 +152,13 @@ export default function Skills() {
                           </h1>
                         </div>
                       </section>
-                      <section className="lg:px-16 text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
+                      <section className="text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
                         <h1>
                           Adaptar e refinar essas habilidades é um processo
                           contínuo da jornada
                         </h1>
                         <h1 className="text-blue-500">
-                          DICA: Melhore SUAS HABILIDADES ATRAVÉS DE DISCIPLINA
+                          DICA: NUNCA PARE DE SE APRIMORAR
                         </h1>
                       </section>
                     </div>
@@ -170,7 +170,7 @@ export default function Skills() {
                       alt="bordaSkills"
                       className="object-fill sm:h-full h-[200px] w-full"
                     />
-                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black sm:text-[1.1rem] text-[.55rem] sm:leading-10">
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4  lg:pl-10">
                         <div className="flex items-center gap-1">
                           <FcWorkflow />
@@ -185,13 +185,13 @@ export default function Skills() {
                           <h1>Proactivity</h1>
                         </div>
                       </section>
-                      <section className="lg:px-20 text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
+                      <section className="text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Habilidades altamente necessárias para avançar
+                          Habilidades necessárias para avançar na
                           carreira.
                         </h1>
                         <h1 className="text-purple-600">
-                          DICA: Seja sempre humilde e sociável
+                          DICA: Seja sempre sociável
                         </h1>
                       </section>
                     </div>
