@@ -18,7 +18,7 @@ export default function ProjectMobile({ title, description, image, link }: Proje
           <Image
             src={image}
             alt={title}
-            className="object-contain h-80 w-80"
+            className="object-contain md:h-80 md:w-80 h-40 w-40"
             priority
           />
         </div>
