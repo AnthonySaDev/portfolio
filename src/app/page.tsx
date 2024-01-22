@@ -6,6 +6,7 @@ import facebook from "../../public/images/facebook.png";
 import instagram from "../../public/images/instagram.png";
 import linkedin from "../../public/images/linkedin.png";
 import Link from "next/link";
+import { RedirectButton } from "@/components/RedirectButton/RedirectButton";
 export default function Home() {
   return (
     <div className="h-screen w-full relative bg-gradient-to-t from-[#dd8bd0] to-[#9439b5] flex items-center justify-center text-center py-1">
@@ -27,12 +28,11 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-5">
-          <Link
+          <RedirectButton
             href="/about"
-            className="bg-[#402f5c] ml-28 text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
-          >
-            <h1 className="welcome brightness-200">jogar</h1>
-          </Link>
+            title="Jogar"
+            className="bg-[#402f5c] ml-28 lg:text-[2rem] text-[1rem] text-black py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+          />
           <Image
             src={seta}
             alt="seta"

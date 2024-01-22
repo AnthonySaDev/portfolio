@@ -2,7 +2,6 @@
 import { useState, useRef } from "react";
 import chao from "../../../public/images/chao.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React from "react";
 import Image from "next/image";
 import return1 from "../../../public/images/return1.png";
 import Link from "next/link";
@@ -12,17 +11,24 @@ import { Navigation } from "swiper/modules";
 import bordaSkills from "../../../public/images/bordaSkills.png";
 import back from "../../../public/images/back.png";
 import next from "../../../public/images/next.png";
-import { FaReact, FaDatabase, FaStar } from "react-icons/fa";
 import {
-  TbBrandReactNative,
-  TbBrandNextjs,
-  TbBrandCSharp,
-} from "react-icons/tb";
-import { DiDotnet } from "react-icons/di";
+  FaReact,
+  FaDatabase,
+  FaStar,
+  FaBook,
+  FaAndroid,
+  FaApple,
+  FaJava,
+  FaSwift,
+  FaCheck,
+} from "react-icons/fa";
+import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
 import { TbBrandDingtalk } from "react-icons/tb";
 import { FcWorkflow } from "react-icons/fc";
 import { PiLampFill } from "react-icons/pi";
 import { ParticlesComponent } from "@/Particles/particles";
+import { Button } from "@/components/Button/Button";
+import { RedirectButton } from "@/components/RedirectButton/RedirectButton";
 export default function Skills() {
   const [showModal, setShowModal] = useState(false);
   const [disabledPrev, setDisabledPrev] = useState(true);
@@ -46,12 +52,13 @@ export default function Skills() {
         <h1 className="welcome brightness-150">LEVEL 2</h1>
         <p className="text-white text-[1.5rem]">EXPLORE minhas habilidades</p>
         <div className="flex items-center gap-5">
-          <button
-            onClick={() => setShowModal(true)}
-            className="bg-[#402f5c]  text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300"
-          >
-            <h1 className="welcome brightness-200">Começar</h1>
-          </button>
+          <Button
+            title="Começar"
+            className="bg-[#402f5c] text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
+            onClick={() => {
+              setShowModal(true);
+            }}
+          />
         </div>
       </div>
 
@@ -134,22 +141,16 @@ export default function Skills() {
                     <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
-                          <TbBrandCSharp size={30} color="blue" />
-                          <h1>
-                            CSHARP<br></br> 1+ano
-                          </h1>
+                          <FaJava size={30} color="blue" />
+                          <h1>JAVA</h1>
                         </div>
                         <div className="flex items-center gap-4">
-                          <DiDotnet size={30} color="purple" />
-                          <h1>
-                            .NET<br></br> 1+ano
-                          </h1>
+                          <FaSwift size={30} color="purple" />
+                          <h1>SWIFT</h1>
                         </div>
                         <div className="flex items-center gap-4">
                           <FaDatabase size={30} color="green" />
-                          <h1>
-                            DATABASE<br></br> 2+anos
-                          </h1>
+                          <h1>DATABASE</h1>
                         </div>
                       </section>
                       <section className="text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 px-2 w-1/2">
@@ -187,8 +188,7 @@ export default function Skills() {
                       </section>
                       <section className="text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Habilidades necessárias para avançar na
-                          carreira.
+                          Habilidades necessárias para avançar na carreira.
                         </h1>
                         <h1 className="text-purple-600">
                           DICA: Seja sempre sociável
@@ -210,12 +210,11 @@ export default function Skills() {
                           <FaStar color="yellow" />
                         </div>
                       </section>
-                      <Link
+                      <RedirectButton
                         href="/projects"
+                        title="Próximo nível"
                         className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
-                      >
-                        <h1 className="welcome brightness-200">Próximo nível</h1>
-                      </Link>
+                      />
                     </div>
                   </SwiperSlide>
                 </Swiper>

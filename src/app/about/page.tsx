@@ -6,6 +6,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ParticlesComponent } from "@/Particles/particles";
+import { Button } from "@/components/Button/Button";
+import { RedirectButton } from "@/components/RedirectButton/RedirectButton";
 
 export default function About() {
   const [showModal, setShowModal] = useState(false);
@@ -21,15 +23,14 @@ export default function About() {
         <h1 className="welcome brightness-150">LEVEL 1</h1>
         <p className="text-white text-[1.5rem]">Sobre mim</p>
         <div className="flex items-center gap-5">
-          <button
+          <Button
+            title="Começar"
+            className="bg-[#402f5c] text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
             onClick={() => {
               setShowModal(true);
               setMode(-1);
             }}
-            className="bg-[#402f5c]  text-black py-4 px-6 rounded-lg lg:text-[2rem] text-[1rem] shadow hover:brightness-200 duration-300"
-          >
-            <h1 className="welcome brightness-200">começar</h1>
-          </button>
+          />
         </div>
       </div>
 
@@ -59,90 +60,64 @@ export default function About() {
                   <section className="flex flex-col gap-2 text-white">
                     <h1 className="text-center">Selecionar dificuldade</h1>
                     <div className="flex flex-col itens-center justify-center ">
-                      <button
+                      <Button
+                        className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
+                        title="Fácil"
                         onClick={() => setMode(0)}
+                      />
+                      <Button
                         className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
-                      >
-                        <h1 className="welcome brightness-200">fácil</h1>
-                      </button>
-                      <button
+                        title="Normal"
                         onClick={() => setMode(1)}
+                      />
+                      <Button
                         className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
-                      >
-                        <h1 className="welcome brightness-200">normal</h1>
-                      </button>
-                      <button
+                        title="Difícil"
                         onClick={() => setMode(2)}
-                        className="bg-[#402f5c] w-[140px] sm:w-[230px] mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 text-white"
-                      >
-                        <h1 className="welcome brightness-200">difícil</h1>
-                      </button>
+                      />
                     </div>
                   </section>
                 )}
 
                 {mode === 0 && (
                   <>
-                    <button
-                      onClick={() => setMode(-1)}
-                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                    >
-                      <h1 className="welcome brightness-200">
-                        Mudar dificuldade
-                      </h1>
-                    </button>
-
-                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      Desenvolvedor Web apaixonado por desenvolvimento de
-                      software, matriculado em Engenharia da Computação. Estou
-                      constantemente buscando oportunidades de aprender, crescer
-                      e contribuir, enquanto aplicando minha curiosidade e
-                      paixão para enfrentar desafios em o mundo da tecnologia.
+                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-25 px-2 py-4 rounded">
+                      Um jovem desenvolvedor apaixonado por criar software e
+                      atualmente matriculado em Engenharia da Computação 🚀.
+                      <br></br>
+                      Estou constantemente em busca de oportunidades para
+                      aprender, crescer e contribuir, aplicando minha
+                      curiosidade e paixão para superar desafios no vasto mundo
+                      da tecnologia 🔎.
                     </p>
                   </>
                 )}
                 {mode === 1 && (
                   <>
-                    <button
-                      onClick={() => setMode(-1)}
-                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                    >
-                      <h1 className="welcome brightness-200">
-                        mudar dificuldade
-                      </h1>
-                    </button>
-                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      Desenvolvedor web apaixonado por desenvolvimento de
-                      software, atualmente cursando Engenharia da Computação.
+                    <p className="text-white text-[1rem] lg:w-6/12 lg:px-10 slide-about bg-black bg-opacity-25 px-2 py-4 rounded">
+                      Desenvolvedor web apaixonado por 💻 desenvolvimento de
+                      software, atualmente cursando Engenharia da Computação 🚀.
                       Ansioso para aprender, crescer e contribuir no mundo
-                      dinâmico da tecnologia. EU possuo conhecimento avançado em
-                      ReactJS, um ano de experiência com React Native, e estou
-                      no caminho para me tornar um desenvolvedor full-stack com
-                      .NET, uma tecnologia que descobri e me apaixonei durante
-                      meus anos de faculdade. Eu adquiri experiência prática na
-                      Nobilis Marketing, trabalhando em projetos de
-                      desenvolvimento web. Além disso, eu uso .NET em meus
-                      projetos acadêmicos, criando APIs e aplicações Windows.
-                      Estou animado para aplicar minhas habilidades e contribuir
-                      para a área de desenvolvimento de software
+                      dinâmico da tecnologia 🌐.<br></br>
+                      Eu possuo conhecimento avançado em ReactJS ⚛️, um ano de
+                      experiência com React Native 📱, e estou me tornando um
+                      desenvolvedor full-stack com Java ☕, uma tecnologia que
+                      descobri e me apaixonei durante meus anos de faculdade.{" "}
+                      <br></br>Eu adquiri experiência prática na Nobilis
+                      Marketing, trabalhando em projetos de desenvolvimento web.
+                      Além disso, eu uso Java e Kotlin em meus projetos
+                      acadêmicos, criando APIs e aplicações android. Estou
+                      animado para aplicar minhas habilidades e contribuir para
+                      a área de desenvolvimento de software. 🚀
                     </p>
                   </>
                 )}
                 {mode === 2 && (
                   <>
-                    <button
-                      onClick={() => setMode(-1)}
-                      className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300"
-                    >
-                      <h1 className="welcome brightness-200">
-                        mudar dificuldade
-                      </h1>
-                    </button>
-
-                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-5/12 lg:px-10 slide-about bg-black bg-opacity-40 px-2 py-4 rounded">
-                      Desenvolvedor Web apaixonado por desenvolvimento de
-                      software, atualmente cursando Engenharia de Computação. Eu
-                      sou dedicado ao aprendizado contínuo, buscando
+                    <p className="text-white lg:text-[1.2rem] text-[1rem] lg:w-7/12 lg:px-10 slide-about bg-black bg-opacity-25 px-2 py-4 rounded">
+                      Desenvolvedor Web apaixonado por 💻 desenvolvimento de
+                      software, atualmente cursando Engenharia de Computação 🚀.
+                      Eu sou dedicado ao aprendizado contínuo, buscando
                       oportunidades para crescer e contribuir enquanto aplico
                       minha curiosidade e paixão por superar desafios em um
                       campo em constante evolução de tecnologia. Além de minhas
@@ -150,31 +125,37 @@ export default function About() {
                       tempo na Nobilis Marketing, onde atuei em projetos de
                       desenvolvimento web. Esta experiência prática aprimorou
                       minhas habilidades e me forneceu informações valiosas
-                      sobre o mundo real aplicação de princípios de
-                      desenvolvimento de software. Minha jornada em
-                      desenvolvimento foi marcado por um foco em ReactJS, com
-                      proficiência avançada e um ano de estudo dedicado em React
-                      Native. Também estou no processo de expandir meu conjunto
-                      de habilidades para se tornar um desenvolvedor full-stack
-                      com .NET, um tecnologia que conheci durante meus estudos
+                      sobre a aplicação real de princípios de desenvolvimento de
+                      software. Minha jornada em desenvolvimento foi marcada por
+                      um foco em ReactJS ⚛️, com proficiência avançada e um ano
+                      de estudo dedicado em React Native 📱. Também estou no
+                      processo de expandir meu conjunto de habilidades para me
+                      tornar um desenvolvedor full-stack com Java, uma
+                      tecnologia que conheci durante meus estudos
                       universitários. Neste ambiente acadêmico, uso ativamente o
-                      .NET para criar APIs e aplicações Windows, aprofundando
+                      Java para criar APIs 🚀 e aplicações Android, aprofundando
                       ainda mais minha compreensão e aplicação desta poderosa
                       tecnologia. Estou animado com a perspectiva de combinar
-                      minha experiência acadêmica conhecimento e experiência
+                      minha experiência acadêmica, conhecimento e experiência
                       prática para contribuir significativamente para o campo de
-                      desenvolvimento de software
+                      desenvolvimento de software. 🚀
                     </p>
                   </>
                 )}
               </section>
               {mode >= 0 && (
-                <Link
-                  href="/skills"
-                  className="bg-[#402f5c]  text-black py-2 px-4 rounded-lg lg:text-[1.2rem] text-[.8rem] shadow hover:brightness-200 duration-300 my-10"
-                >
-                  <h1 className="welcome brightness-200">Proxímo nível</h1>
-                </Link>
+                <div className="flex items-center justify-center mt-10 gap-10">
+                  <Button
+                    title="Trocar Dificuldade"
+                    onClick={() => setMode(-1)}
+                    className="bg-[#402f5c]  text-black text-[1rem] py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+                  />
+                  <RedirectButton
+                    href="/skills"
+                    title="Próximo nível"
+                    className="bg-[#402f5c]  text-black text-[1rem] py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+                  />
+                </div>
               )}
               <Image
                 src={chao}
