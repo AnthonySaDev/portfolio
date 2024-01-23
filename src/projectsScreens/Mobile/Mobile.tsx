@@ -107,7 +107,7 @@ export function Mobile({ onClick }: CloseProps) {
                   className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 />
                 <ProjectMobile
-                  description="App consumindo API TMDB para encontrar os melhors filmes."
+                  description="App consumindo API TMDB para encontrar os melhores filmes."
                   image={movieApp}
                   title="chamados"
                   link="https://github.com/AnthonySaDev/MovieApp?tab=readme-ov-file"
