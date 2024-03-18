@@ -31,7 +31,7 @@ export default function Home() {
           <RedirectButton
             href="/about"
             title="Jogar"
-            className="bg-[#402f5c] ml-28 lg:text-[2rem] text-[1rem] text-black py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+            className="bg-[#402f5c] md:ml-28 ml-20 lg:text-[2rem] text-[1rem] text-black py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
           />
           <Image
             src={seta}
