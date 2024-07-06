@@ -25,7 +25,7 @@ export default function ProjectMobile({ title, description, image, link }: Proje
       </div>
     </section>
 
-    <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-3 w-1/2">
+    <section className="text-center flex flex-col itens-center justify-center gap-4 lg:gap-8 p-4 w-1/2">
       <h1>
         {description}
       </h1>

@@ -15,14 +15,10 @@ import {
   FaReact,
   FaDatabase,
   FaStar,
-  FaBook,
-  FaAndroid,
-  FaApple,
   FaJava,
   FaSwift,
-  FaCheck,
 } from "react-icons/fa";
-import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
+import { TbBrandReactNative, TbBrandNextjs, TbBrandVite, TbBrandAndroid, TbBrandApple, TbBrandNodejs, TbBrandTypescript, TbGitBranch } from "react-icons/tb";
 import { TbBrandDingtalk } from "react-icons/tb";
 import { FcWorkflow } from "react-icons/fc";
 import { PiLampFill } from "react-icons/pi";
@@ -89,7 +85,7 @@ export default function Skills() {
                   className=" h-fit sm:h-[350px] lg:w-5/12 w-9/12 flex itens-center justify-center "
                   onSlideChange={(swiper) => {
                     setDisabledPrev(swiper.activeIndex === 0);
-                    setDisabledNext(swiper.activeIndex === 3);
+                    setDisabledNext(swiper.activeIndex === 4);
                   }}
                 >
                   <SwiperSlide className="flex itens-center justify-center">
@@ -108,9 +104,9 @@ export default function Skills() {
                         </div>
 
                         <div className="flex items-center gap-4 pr-2">
-                          <TbBrandReactNative size={30} color="blue" />
+                          <TbBrandVite size={30} color="yellow" />
                           <h1>
-                            React Native<br></br> 1+ano
+                            Vite<br></br> 1+ ano
                           </h1>
                         </div>
 
@@ -123,8 +119,7 @@ export default function Skills() {
                       </section>
                       <section className="text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
                         <h1>
-                          Essas habilidades estão sendo constantemente
-                          aprimoradas
+                          Habilidades desenvolvidas para desenvolvimento web
                         </h1>
                         <h1 className="text-purple-600">
                           DICA: AUMENTE AS HABILIDADES COM ESTUDO CONTíNUO
@@ -139,17 +134,57 @@ export default function Skills() {
                       className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
                     <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
+                      <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-8">
+                        <div className="flex items-center gap-4">
+                          <TbBrandReactNative size={30} color="blue" />
+                          <h1>
+                            React Native<br></br> 2+anos
+                          </h1>
+                        </div>
+
+                        <div className="flex items-center gap-4 pr-2">
+                          <TbBrandAndroid size={30} color="green" />
+                          <h1>
+                            Android<br></br> 1+ ano
+                          </h1>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                          <TbBrandApple size={30} />
+                          <h1>
+                            IOS<br></br> 1+ano
+                          </h1>
+                        </div>
+                      </section>
+                      <section className="text-left flex flex-col itens-center justify-center gap-4 lg:gap-8 p-2 w-1/2">
+                        <h1>
+                        Habilidades desenvolvidas para desenvolvimento Mobile
+
+                        </h1>
+                        <h1 className="text-purple-600">
+                          DICA: A prática leva à perfeição
+                        </h1>
+                      </section>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="flex itens-center justify-center">
+                    <Image
+                      src={bordaSkills}
+                      alt="bordaSkills"
+                      className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    />
+                    <div className="w-full sm:h-full h-[200px] absolute sm:top-0 top-1 flex flex-row itens-center justify-center sm:divide-x-8 divide-x divide-black text-[.55rem] md:text-lg sm:leading-10">
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4 lg:pl-10">
                         <div className="flex items-center gap-4">
-                          <FaJava size={30} color="blue" />
-                          <h1>JAVA</h1>
+                          <TbBrandNodejs size={30} color="green" />
+                          <h1>NodeJS</h1>
                         </div>
                         <div className="flex items-center gap-4">
-                          <FaSwift size={30} color="purple" />
-                          <h1>SWIFT</h1>
+                          <TbBrandTypescript size={30} color="blue" />
+                          <h1>Typescript</h1>
                         </div>
                         <div className="flex items-center gap-4">
-                          <FaDatabase size={30} color="green" />
+                          <FaDatabase size={30} color="gray" />
                           <h1>DATABASE</h1>
                         </div>
                       </section>
@@ -175,20 +210,20 @@ export default function Skills() {
                       <section className="text-left flex flex-col itens-center justify-center lg:gap-5 gap-3 w-1/2 pl-4  lg:pl-10">
                         <div className="flex items-center gap-1">
                           <FcWorkflow />
-                          <h1>Teamwork</h1>
+                          <h1>Scrum</h1>
                         </div>
                         <div className="flex items-center gap-1">
-                          <TbBrandDingtalk />
-                          <h1>Communication</h1>
+                          <TbBrandDingtalk color="red" />
+                          <h1>Comunicação</h1>
                         </div>
                         <div className="flex items-center gap-1">
-                          <PiLampFill color="yellow" />
-                          <h1>Proactivity</h1>
+                          <TbGitBranch color="black" />
+                          <h1>Git</h1>
                         </div>
                       </section>
                       <section className="text-left flex flex-col itens-center justify-center gap-4 md:gap-8 px-2 w-1/2">
                         <h1>
-                          Habilidades necessárias para avançar na carreira.
+                          Habilidades necessárias para se tornar um bom desenvolvedor.
                         </h1>
                         <h1 className="text-purple-600">
                           DICA: Seja sempre sociável

@@ -15,7 +15,7 @@ export default function Home() {
         alt="backgroundHome"
         className="w-full h-full object-fill opacity-25 brightness-50"
       />
-      <section className="absolute top-14 lg:top-20 flex items-start  justify-center z-10  flex flex-col gap-10 text-white  w-full items-center h-4/5 justify-evenly">
+      <section className="absolute top-14 lg:top-20 flex z-10 flex-col gap-10 text-white  w-full items-center h-4/5 justify-evenly">
         <div className="lg:text-[3rem] text-[2rem] text-center">
           <h1 className="welcome brightness-150">Bem-vindo </h1>
           <h1 className="welcome brightness-150"> jogador 1</h1>
@@ -27,17 +27,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center">
           <RedirectButton
             href="/about"
             title="Jogar"
-            className="bg-[#402f5c] md:ml-28 ml-20 lg:text-[2rem] text-[1rem] text-black py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+            className="bg-[#402f5c] lg:text-[2rem] text-[1rem] text-black py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
           />
-          <Image
-            src={seta}
-            alt="seta"
-            className="brightness-[2.5] arrow-animation w-2/12"
-          />
+ 
         </div>
 
         <div className="lg:text-[2rem] text-[1rem] text-center flex flex-col gap-5 itens-center ">

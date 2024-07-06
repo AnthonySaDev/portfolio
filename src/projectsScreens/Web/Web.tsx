@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import bordaSkills from "../../../public/images/bordaSkills.png";
 import back from "../../../public/images/back.png";
 import next from "../../../public/images/next.png";
+import typegame from "../../../public/images/type.png";
+import starship from "../../../public/images/starship.png";
 import impresilk from "../../../public/images/impresilk.png";
 import larDasVelhinhas from "../../../public/images/larDasVelhinhas.png";
 import chao from "../../../public/images/chao.png";
@@ -55,10 +57,10 @@ export function Web({
               className=" sm:h-[400px] h-[200px] lg:w-5/12 w-9/12 flex items-center justify-center"
               onSlideChange={(swiper) => {
                 setDisabledPrev(swiper.activeIndex === 0);
-                setDisabledNext(swiper.activeIndex === 4);
+                setDisabledNext(swiper.activeIndex === 6);
               }}
             >
-              <SwiperSlide className="flex items-center justify-center">
+                            <SwiperSlide className="flex items-center justify-center">
                 <Image
                   src={bordaSkills}
                   alt="bordaSkills"
@@ -70,6 +72,33 @@ export function Web({
                   description="Explore o site dedicado a apoiar uma ONG que presta
         assistência a idosos."
                   link="https://lardasvelhinhas.com.br/"
+                />
+              </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={bordaSkills}
+                  alt="bordaSkills"
+                  className="object-fill sm:h-[400px] h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+                <Project
+                  title="Lar das Velhinhas"
+                  image={starship}
+                  description="Solução proposta para o desafio de criar um sistema delivery intergalático."
+                  link="https://starship-delivery.vercel.app/"
+                />
+              </SwiperSlide>
+ 
+              <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={bordaSkills}
+                  alt="bordaSkills"
+                  className="object-fill sm:h-[400px] h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+                <Project
+                  title="Lar das Velhinhas"
+                  image={typegame}
+                  description="Jogo de digitação para treinar e aprimorar sua velocidade no teclado"
+                  link="https://type-game-adventure.vercel.app/"
                 />
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">

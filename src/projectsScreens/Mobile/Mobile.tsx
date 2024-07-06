@@ -8,8 +8,9 @@ import next from "../../../public/images/next.png";
 import nubble from "../../../public/images/nubble.png";
 import novocred from "../../../public/images/novocred.jpeg";
 import chao from "../../../public/images/chao.png";
-import chamados from "../../../public/images/chamados.png";
+import money from "../../../public/images/money.png";
 import movieApp from "../../../public/images/movieApp.png";
+import aiko from "../../../public/images/aiko.png";
 import pizzariaMobile from "../../../public/images/pizzariaMobile.png";
 import { RedirectButton } from "@/components/RedirectButton/RedirectButton";
 import { FaStar } from "react-icons/fa";
@@ -56,9 +57,35 @@ export function Mobile({ onClick }: CloseProps) {
               className=" sm:h-[400px] h-[200px] lg:w-5/12 w-9/12 flex items-center justify-center"
               onSlideChange={(swiper) => {
                 setDisabledPrev(swiper.activeIndex === 0);
-                setDisabledNext(swiper.activeIndex === 4);
+                setDisabledNext(swiper.activeIndex === 6);
               }}
             >
+             <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={bordaSkills}
+                  alt="bordaSkills"
+                  className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+                <ProjectMobile
+                  description="Aplicativo para controle de finanças pessoais."
+                  image={money}
+                  link="https://github.com/AnthonySaDev/financeApp"
+                  title="Money Wise"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={bordaSkills}
+                  alt="bordaSkills"
+                  className="object-fill sm:h-full h-[200px] w-full sm:relative sm:top-0 sm:left-0 sm:-translate-x-0 sm:-translate-y-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+                <ProjectMobile
+                  description="Sistema para acompanhar posicionamento de ônibus em tempo real."
+                  image={aiko}
+                  link="https://github.com/AnthonySaDev/aiko-challenge"
+                  title="Money Wise"
+                />
+              </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center ">
                 <Image
                   src={bordaSkills}

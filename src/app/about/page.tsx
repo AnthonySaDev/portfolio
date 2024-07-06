@@ -144,18 +144,18 @@ export default function About() {
                 )}
               </section>
               {mode >= 0 && (
-                <div className="flex md:flex-row flex-col items-center justify-center mt-10 gap-10">
-                  <RedirectButton
-                    href="/skills"
-                    title="Próximo nível"
-                    className="bg-[#402f5c]  text-black text-[1rem] py-4 px-7 rounded-lg shadow hover:brightness-200 duration-300"
-                  />
-                  <Button
-                    title="Trocar Dificuldade"
-                    onClick={() => setMode(-1)}
-                    className="bg-[#402f5c]  text-black text-[.8rem] py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
-                  />
-                </div>
+                <div className="flex md:flex-row flex-col items-center justify-center gap-10 mt-10">
+                <RedirectButton
+                  href="/skills"
+                  title="Próximo nível"
+                  className="bg-[#402f5c] text-black text-1xl py-4 px-7 rounded-lg shadow hover:brightness-200 duration-300"
+                />
+                <Button
+                  title="Trocar Dificuldade"
+                  onClick={() => setMode(-1)}
+                  className="bg-[#402f5c] text-black text-0.8xl py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+                />
+              </div>
               )}
               <Image
                 src={chao}
