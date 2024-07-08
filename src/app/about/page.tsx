@@ -148,12 +148,12 @@ export default function About() {
                 <RedirectButton
                   href="/skills"
                   title="Próximo nível"
-                  className="bg-[#402f5c] text-black text-1xl py-4 px-7 rounded-lg shadow hover:brightness-200 duration-300"
+                  className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
                 />
                 <Button
                   title="Trocar Dificuldade"
                   onClick={() => setMode(-1)}
-                  className="bg-[#402f5c] text-black text-0.8xl py-4 px-6 rounded-lg shadow hover:brightness-200 duration-300"
+                  className="bg-[#402f5c] w-fit mx-auto mt-10 text-black py-4 px-6 rounded-sm sm:text-[1.9rem] text-[1rem] shadow hover:brightness-200 duration-300 my-10"
                 />
               </div>
               )}
