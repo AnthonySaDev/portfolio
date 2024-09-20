@@ -30,7 +30,7 @@ export const gridItems = [
   {
     id: 3,
     title: "Tecnologias",
-    description: "Estou sempre em busca de aprimoramento",
+    description: "Em busca de aprimoramento",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
