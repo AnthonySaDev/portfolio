@@ -50,7 +50,7 @@ const Footer = () => {
           Copyright © 2024 Anthony Sá Reis
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-10">
           {socialMedia.map((info) => (
             <div
               key={info.id}

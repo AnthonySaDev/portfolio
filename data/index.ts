@@ -102,6 +102,22 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "https://www.queluzmoc.com.br/",
   },
+  {
+    id: 5,
+    title: "TypeGame",
+    des: "Jogo de Digitação desenvolvido com foco em desenvolver habilidades de escrita e leitura dinâmica.",
+    img: "/p5.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://type-game-adventure.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "StarShipDelivery",
+    des: "Desafio completo com a criação de um sistema de entrega espacial, com foco em performance e experiência do usuário.",
+    img: "/p6.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://starship-delivery.vercel.app/",
+  },
 ];
 
 export const companies = [
